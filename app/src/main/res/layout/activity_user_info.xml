@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:orientation="vertical"
+    tools:context=".UserInfoActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30dp"
+    android:gravity="center_horizontal"
+    android:layout_marginBottom="90dp"
+    android:text="Tài khoản"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@color/colorLightGrey"
+        android:id="@+id/imgAvatar"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn avatar của bạn"
+        android:id="@+id/txtSelectPhoto"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorPrimary"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLayoutUserName"
+        android:layout_marginBottom="6dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUserName"
+            android:layout_marginBottom="10dp"
+            android:hint="Name"
+            android:textSize="16dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Tiếp tục"-->
+<!--        android:background="@drawable/btn_round"-->
+<!--        android:id="@+id/btnSignConinue"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textColor="@color/colorWhite"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:layout_marginBottom="30dp"-->
+
+<!--        />-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Next"-->
+<!--        android:textColor="@color/colorLightGrey"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:id="@+id/btnContinue"/>-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:background="@drawable/btn_round"
+        android:id="@+id/btnContinue"
+        android:textSize="18dp"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="true"
+        android:layout_marginBottom="30dp"
+
+
+        />
+</LinearLayout>

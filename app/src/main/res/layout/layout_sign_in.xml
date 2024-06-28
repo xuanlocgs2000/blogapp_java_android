@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blog app!"
+        android:textSize="32sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="160dp"
+        android:fontFamily="@font/leckerlione_legular"
+        />
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtLayoutEmailSignIn"
+    android:layout_marginBottom="6dp">
+    <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEmailSignIn"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="16dp"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLayoutPasswordSignIn"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="6dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPasswordSignIn"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="16dp"
+            android:layout_marginBottom="20dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Đăng nhập"
+    android:background="@drawable/btn_round"
+    android:id="@+id/btnSignIn"
+    android:textSize="18dp"
+    android:textColor="@color/colorWhite"
+    android:textAllCaps="true"
+    android:layout_marginBottom="30dp"
+
+
+    />
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Đăng nhập5"-->
+<!--        android:background="@drawable/btn_round"-->
+<!--        android:id="@+id/btnTest"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textColor="@color/colorWhite"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:layout_marginBottom="30dp"-->
+
+
+<!--        />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn chưa có tài khoản?"
+            android:layout_marginRight="6dp"
+            android:textStyle="italic"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng kí"
+            android:id="@+id/txtSignUp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="6dp"
+            android:textStyle="bold|italic"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true" />
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Đang xử lí..."
+            android:textColor="@android:color/black"
+            android:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>
